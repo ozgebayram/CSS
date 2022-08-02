@@ -1,0 +1,152 @@
+/*CSS, bir Web sayfasını biçimlendirmek için kullandığımız dildir.
+Web sayfamızda stiller tanımlamak için CSS kullanırız.
+
+CSS Seçicileri
+CSS seçicileri, HTML öğelerini seçmek için kullanılır.
+
+
+Bu örnekte, tüm <p> öğeleri, kırmızı bir metin rengiyle ortaya hizalanacaktır
+p {
+	text-align: center;
+	color: red;
+  }-->
+
+"p" CSS'de bir seçicidir (stillemek istediğiniz HTML öğesini gösterir: <p>).
+"color" bir özelliktir ve "red" özellik değeridir
+"text-align" bir özelliktir ve "center" özellik değeridir
+
+
+CSS id seçici:
+
+id seçici, belirli bir öğeyi seçmek için bir HTML öğesinin id niteliğini kullanır.
+
+Bir öğenin kimliği, bir sayfada benzersizdir, bu nedenle kimlik seçici, benzersiz bir öğeyi seçmek için kullanılır!
+
+Belirli bir kimliğe sahip bir öğe seçmek için, bir kare (#) karakteri ve ardından öğenin kimliğini yazılır.
+
+#text1 {
+	color: red;
+  }
+
+  CSS class seçici:
+
+Class seçici, belirli bir class niteliğine sahip HTML öğelerini seçer.
+
+Belirli bir sınıfa sahip öğeleri seçmek için, bir nokta (.) karakteri ve ardından class adı yazılır.
+
+.center {
+	text-align: center;
+	color: red;
+  }
+
+  Universal Seçici
+  Universal seçici *, sayfadaki tüm HTML öğelerini seçer.
+  
+  * {
+	margin: 0;
+	padding: 0;
+	color: black;
+  }
+
+  CSS Gruplandırma Seçici
+  Gruplama seçici, aynı stil tanımlarına sahip tüm HTML öğelerini seçer.
+  
+  Aşağıdaki CSS kodlarında (h1, h2 ve p öğeleri aynı stil tanımlarına sahiptir):
+  
+  h1 {
+	text-align: center;
+	color: red;
+  }
+  
+  h2 {
+	text-align: center;
+	color: red;
+  }
+  
+  p {
+	text-align: center;
+	color: red;
+  }
+  Kodu en aza indirmek için seçicileri gruplamak daha iyi olacaktır.
+  
+  Seçicileri gruplamak için her seçiciyi virgülle ayırabiliriz.
+  
+  Bu örnekte, seçicileri yukarıdaki koddan grupladık: 
+  
+  h1, h2, p {
+	text-align: center;
+	color: red;
+  }
+
+CSS ekleme:
+  Bir tarayıcı bir stil sayfasını okuduğunda, HTML belgesini stil sayfasındaki bilgilere göre biçimlendirir.
+
+Stil sayfası eklemenin üç yolu vardır:
+
+ -Harici CSS
+ -Dahili CSS
+ -Satır içi CSS
+
+-Harici CSS
+	Harici bir stil sayfasıyla, yalnızca bir dosyayı değiştirerek tüm web sitesinin görünümünü değiştirebilirsiniz!
+
+	Her HTML sayfası, head bölümünün içindeki <link> öğesinin içindeki harici stil sayfası dosyasına bir referans içermelidir.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+</body>
+</html>
+
+-Dahili CSS
+	Tek bir HTML sayfasının benzersiz bir stili varsa, dahili bir stil sayfası kullanılabilir.
+
+  	Dahili stiller, bir HTML sayfasının <head> bölümünün içindeki <style> öğesi içinde tanımlanır:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+
+</body>
+</html>
+
+-Satır içi CSS
+Tek bir öğe için benzersiz bir stil uygulamak için satır içi stil kullanılabilir.
+Satır içi stiller, ilgili öğenin "stil" özelliği içinde tanımlanır:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+---Bir HTML öğesi için birden fazla stil belirtildiğinde hangi stil kullanılacak?
+
+Bir sayfadaki tüm stiller, aşağıdaki sıralamaya göre bir önceliğe sahiptir.
+
+--Satır içi stil (bir HTML öğesinin içinde)
+--Dış ve iç stil sayfaları (baş bölümünde)
+--tarayıcı varsayılanı
+Bu nedenle, bir satır içi stil en yüksek önceliğe sahiptir ve harici ve dahili stilleri ve tarayıcı varsayılanlarını geçersiz kılar.

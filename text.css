@@ -1,0 +1,115 @@
+/*
+CSS, metni biçimlendirmek için birçok özelliğe sahiptir.
+
+body {
+  color: blue;
+}
+
+h1 {
+  color: green;
+}
+
+
+--Metin rengi ve Arkaplan rengi tanımlamak için:
+
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+
+
+---METİN HİZALAMA---
+-text-align: bir metnin yatay hizalamasını ayarlamak için kullanılır.
+Bir metin sola veya sağa hizalanmış, ortalanmış veya iki yana yaslanmış olabilir.
+
+
+-text-align-last, bir metnin son satırının nasıl hizalanacağını belirtir.
+
+
+-direction, unicode-bidibir öğenin metin yönünü değiştirmek için kullanılabilir:
+
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+-vertical-align: bir öğenin dikey hizalamasını ayarlar.
+
+
+---METİN DEKORASYONU---
+
+-text-decoration-line, metne bir dekorasyon çizgisi eklemek için kullanılır.
+-text-decoration-style, dekorasyon çizgisinin stilini ayarlamak için kullanılır
+-text-decoration-thickness, dekorasyon çizgisinin kalınlığını ayarlamak için kullanılır.
+
+
+Steno Özelliği
+Özellik text-decoration, aşağıdakiler için kestirme bir özelliktir:
+
+text-decoration-line(gereklidir)
+text-decoration-color(isteğe bağlı)
+text-decoration-style(isteğe bağlı)
+text-decoration-thickness(isteğe bağlı)
+
+
+!!!HTML'deki tüm bağlantıların altı varsayılan olarak çizilir. Bazen bağlantıların stilinin altı çizili olmadığını görürsünüz. Aşağıdaki text-decoration: none;gibi bağlantılardan alt çizgiyi kaldırmak için kullanılır
+
+
+----METİN DÖNÜŞÜMÜ----
+
+text-transform, bir metinde büyük ve küçük harfleri belirtmek için kullanılır.
+
+Her şeyi büyük veya küçük harflere dönüştürmek veya her kelimenin ilk harfini büyük harf yapmak için kullanılabilir:
+
+Örnek
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize
+
+
+  ---METİN ARALIĞI---
+
+  -text-indent, bir metnin ilk satırının girintisini belirtmek için kullanılır:
+
+p {
+  text-indent: 50px;
+}
+
+-letter-spacing, bir metindeki karakterler arasındaki boşluğu belirtmek için kullanılır.
+-line-height, satırlar arasındaki boşluğu belirtmek için kullanılır
+-word-spacing, bir metindeki kelimeler arasındaki boşluğu belirtmek için kullanılır.
+
+
+-white-space, bir öğenin içindeki boşlukların nasıl işlendiğini belirtir.
+
+Bu örnek, bir öğenin içine metin kaydırmanın nasıl devre dışı bırakılacağını gösterir:
+
+
+p {
+  white-space: nowrap;
+}
+
+--Metin gölgesi
+-text-shadowmetne gölge ekler.
+
+En basit kullanımında, yalnızca yatay gölgeyi (2px) ve dikey gölgeyi (2px) belirtirsiniz
+
+
+

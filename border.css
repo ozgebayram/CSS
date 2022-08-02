@@ -1,0 +1,80 @@
+/*
+CSS Kenarlık Stili
+Özellik border-style, ne tür bir kenarlığın görüntüleneceğini belirtir.
+
+Aşağıdaki değerlere izin verilir:
+
+dotted- Noktalı bir kenarlık tanımlar
+dashed- Kesikli bir kenarlık tanımlar
+solid- Katı bir sınır tanımlar
+double- Çift kenarlık tanımlar
+groove- 3B oluklu bir kenarlık tanımlar. Etki, kenarlık rengi değerine bağlıdır
+ridge- 3B çıkıntılı bir kenarlık tanımlar. Etki, kenarlık rengi değerine bağlıdır
+inset- Bir 3B iç kenarlık tanımlar. Etki, kenarlık rengi değerine bağlıdır
+outset- Bir 3B başlangıç ​​sınırı tanımlar. Etki, kenarlık rengi değerine bağlıdır
+none- Sınır tanımlamaz
+hidden- Gizli bir sınır tanımlar
+Özellik border-stylebir ila dört değere sahip olabilir (üst kenarlık, sağ kenarlık, alt kenarlık ve sol kenarlık için).
+
+-- border-width, dört sınırın genişliğini belirtir.
+-- border-width bir ila dört değere sahip olabilir (üst kenarlık, sağ kenarlık, alt kenarlık ve sol kenarlık için)
+-- border-color, dört kenarlığın rengini ayarlamak için kullanılır.
+-- border-color bir ila dört değere sahip olabilir (üst kenarlık, sağ kenarlık, alt kenarlık ve sol kenarlık için). 
+
+
+border-style özelliğin dört değeri varsa :
+
+kenarlık stili: noktalı düz çift çizgili;
+-üst kenarlık noktalı
+-sağ kenarlık sağlam
+-alt kenarlık çift
+-sol kenar kesikli
+
+border-styleÖzelliğin üç değeri varsa :
+
+kenarlık stili: noktalı düz çift;
+-üst kenarlık noktalı
+-sağ ve sol kenarlıklar sağlam
+-alt kenarlık çift
+
+border-styleÖzelliğin iki değeri varsa :
+
+kenarlık stili: noktalı düz;
+-üst ve alt kenarlıklar noktalı
+-sağ ve sol kenarlıklar sağlam
+
+border-styleÖzelliğin bir değeri varsa :
+
+kenarlık stili: noktalı;
+-dört sınırın tümü noktalı
+
+---CSS Kenarlığı - Steno Özellik---
+Sınırlarla uğraşırken göz önünde bulundurulması gereken birçok özellik var.
+
+Kodu kısaltmak için, tüm bireysel sınır özelliklerini tek bir özellikte belirtmek de mümkündür.
+
+Özellik border, aşağıdaki bireysel kenarlık özellikleri için bir kestirme özelliktir:
+
+border-width
+border-style(gereklidir)
+border-color
+
+Örnek:
+yalnızca bir taraf içinde tüm bireysel kenarlık özelliklerini belirtebilirsiniz
+
+p {
+  border-left: 6px solid red;
+}
+
+p {
+  border-bottom: 6px solid red;
+}--- alt sınır
+
+--Özellik border-radius, bir öğeye yuvarlak kenarlıklar eklemek için kullanılır
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+
+

@@ -1,0 +1,35 @@
+/*
+---CSS Dolgusu---
+CSS paddingözellikleri, herhangi bir tanımlanmış sınırların içinde bir öğenin içeriğinin etrafında boşluk oluşturmak için kullanılır.
+
+CSS ile dolgu üzerinde tam kontrole sahipsiniz. Bir elemanın her bir tarafı (üst, sağ, alt ve sol) için dolguyu ayarlamak için özellikler vardır.
+
+Dolgu 
+CSS, bir öğenin her bir tarafı için dolguyu belirtmek için özelliklere sahiptir:
+
+--padding-top
+--padding-right
+--padding-bottom
+--padding-left
+Tüm dolgu özellikleri aşağıdaki değerlere sahip olabilir:
+
+--uzunluk - px, pt, cm, vb. cinsinden bir dolgu belirtir.
+--% - içeren öğenin genişliğinin %'si olarak bir dolgu belirtir
+--devral - dolgunun üst öğeden devralınması gerektiğini belirtir
+Not: Negatif değerlere izin verilmez.
+
+
+--Kodu kısaltmak için tüm padding özelliklerini tek bir özellikte belirtmek mümkündür.
+
+Özellik padding, aşağıdaki bireysel dolgu özellikleri için bir kestirme özelliktir:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+div {
+  padding: 25px 50px 75px 100px;
+}
+
+

@@ -1,0 +1,57 @@
+/*
+Marjin özelliği, elemanın sınırları dışında boşluk yaratmak için kullanılır. Bir elemanın her bir tarafı için kenar boşluğunu ayarlamak için 4 farklı özellik vardır:
+--margin-top
+--margin-right
+--margin-bottom
+--margin-left
+Marj özellikleri aşağıdaki değerlere sahip olabilir
+
+auto: Kenar boşluğunun uzunluğu otomatik olarak hesaplanır.
+
+-/+ numbers: Kenar boşluğunun uzunluğu px, rem, em, cm, vb. olarak tanımlanır.
+
+%: Kenar boşluğunun uzunluğu, içeren öğenin genişliğinin %'si cinsindendir.
+
+inherit: Kenar boşluğunun uzunluğu üst öğeden devralınır.
+
+
+---Marj - Steno Özellik---
+Kodu kısaltmak için tüm kenar boşluğu özelliklerini tek bir özellikte belirtmek mümkündür.
+
+Özellik margin, aşağıdaki bireysel kenar boşluğu özellikleri için bir kestirme özelliktir:
+
+--margin-top
+--margin-right
+--margin-bottom
+--margin-left
+İşte nasıl çalıştığı:
+
+margin özelliğinin dört değeri varsa :
+
+kenar boşluğu: 25px 50px 75px 100px;
+üst kenar boşluğu 25 pikseldir
+sağ kenar boşluğu 50 piksel
+alt kenar boşluğu 75 pikseldir
+sol kenar boşluğu 100 piksel
+Örnek
+Kenar stenografi özelliğini dört değerle kullanın:
+
+p {
+  margin: 25px 50px 75px 100px;
+}
+
+
+---Otomatik Değer---
+auto öğeyi kapsayıcı içinde yatay olarak ortalamak için kenar boşluğu özelliğini ayarlayabilirsiniz .
+
+Öğe daha sonra belirtilen genişliği kaplayacak ve kalan boşluk sol ve sağ kenar boşlukları arasında eşit olarak bölünecektir.
+
+Örnek
+Kenar boşluğunu kullan: auto:
+
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+

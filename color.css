@@ -1,0 +1,57 @@
+/*CSS Renkler
+
+CSS'de, önceden tanımlanmış bir renk adı kullanılarak bir renk belirtilebilir
+Renkler, önceden tanımlanmış renk adları veya RGB, HEX, HSL, RGBA, HSLA değerleri kullanılarak belirlenir
+
+HTML öğeleri  background-color özelliği ile arka plan rengini ayarlayabilirsiniz:
+
+Metnin rengini color="" özelliği kullanarak ayarlayabilirsiniz
+
+--RGB Değeri--
+CSS'de bir renk, şu formül kullanılarak RGB değeri olarak belirtilebilir:
+Bir RGB renk değeri KIRMIZI, YEŞİL ve MAVİ ışık kaynaklarını temsil eder.
+
+rgb ( kırmızı, yeşil , mavi )
+
+Her parametre (kırmızı, yeşil ve mavi), rengin yoğunluğunu 0 ile 255 arasında tanımlar.
+
+Örneğin, rgb(255, 0, 0) kırmızı olarak görüntülenir, çünkü kırmızı en yüksek değerine (255) ve diğerleri 0'a ayarlanmıştır.
+
+Siyahı görüntülemek için, tüm renk parametrelerini şu şekilde 0'a ayarlayın: rgb(0, 0, 0).
+
+Beyazı görüntülemek için, tüm renk parametrelerini şu şekilde 255'e ayarlayın: rgb(255, 255, 255).
+
+--RGBA Değeri--
+RGBA renk değerleri, bir rengin opaklığını belirten alfa kanalıyla RGB renk değerlerinin bir uzantısıdır.
+
+Bir RGBA renk değeri şu şekilde belirtilir:
+
+rgba ( kırmızı, yeşil , mavi, alfa )
+
+Alfa parametresi, 0.0 (tamamen şeffaf) ile 1.0 (hiç şeffaf değil) arasında bir sayıdır
+
+--HEX Değeri--
+CSS'de, formda onaltılık bir değer kullanılarak bir renk belirtilebilir:
+
+# rrggbb
+
+Burada rr (kırmızı), gg (yeşil) ve bb (mavi), 00 ve ff arasındaki onaltılık değerlerdir (ondalık 0-255 ile aynı).
+
+Örneğin, kırmızı en yüksek değerine (ff) ve diğerleri en düşük değere (00) ayarlandığından #ff0000 kırmızı olarak görüntülenir.
+
+Siyahı görüntülemek için tüm değerleri 00 olarak ayarlayın, bunun gibi: #000000.
+
+Beyazı görüntülemek için, tüm değerleri şu şekilde ff olarak ayarlayın: #ffffff.  
+
+--HSL Değeri--
+CSS'de bir renk, şu şekilde ton, doygunluk ve açıklık (HSL) kullanılarak belirtilebilir:
+
+hsl( ton , doygunluk , hafiflik )
+
+Ton, renk tekerleğinde 0 ile 360 ​​arasındaki bir derecedir. 0 kırmızı, 120 yeşil ve 240 mavidir.
+
+Doygunluk bir yüzde değeridir, %0 bir gri tonu anlamına gelir ve %100 tam renktir.
+
+Açıklık da bir yüzdedir, %0 siyahtır, %50 açık veya koyu değildir, %100 beyazdır
+
+

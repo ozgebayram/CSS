@@ -1,0 +1,40 @@
+display, düzeni kontrol etmek için en önemli CSS özelliğidir.
+display, bir öğenin görüntülenip görüntülenmeyeceğini/nasıl görüntüleneceğini belirtir.
+Her HTML öğesinin, ne tür bir öğe olduğuna bağlı olarak varsayılan bir görüntüleme değeri vardır. Çoğu öğe için varsayılan görüntüleme değeri blockveya inline.
+
+--Blok düzeyinde bir öğe her zaman yeni bir satırda başlar ve mevcut tüm genişliği kaplar (mümkün olduğunca sola ve sağa doğru uzanır).
+
+<div> öğesi, blok düzeyinde bir öğedir.
+Blok düzeyinde öğelere örnekler:
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+--Satır içi(inline) öğe yeni bir satırda başlamaz ve yalnızca gerektiği kadar genişlikte yer kaplar.
+
+Bu, bir paragraf içindeki satır içi <span> öğesidir .
+
+Satır içi öğelere örnekler:
+
+<span>
+<a>
+<img>
+
+
+---Varsayılan Görüntü Değerini Geçersiz Kıl---
+Belirtildiği gibi, her öğenin varsayılan bir görüntüleme değeri vardır. Ancak, bunu geçersiz kılabilirsiniz.
+
+Satır içi bir öğeyi bir blok öğesiyle değiştirmek veya tam tersi, sayfanın belirli bir şekilde görünmesi ve yine de web standartlarını takip etmesi için yararlı olabilir.
+
+Yaygın bir örnek, <li>yatay menüler için satır içi öğeler yapmaktır:
+
+Örnek
+li {
+	display: inline;
+  }
+

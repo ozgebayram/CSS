@@ -1,0 +1,59 @@
+/*CSS ile bağlantılar birçok farklı şekilde biçimlendirilebilir.
+
+bağlantıların hangi durumda olduklarına bağlı olarak farklı şekilde biçimlendirilebilir.
+
+Dört bağlantı durumu şunlardır:
+
+--a:link- normal, ziyaret edilmemiş bir bağlantı
+--a:visited- kullanıcının ziyaret ettiği bir bağlantı
+--a:hover- kullanıcı fareyi üzerine getirdiğinde bir bağlantı
+--a:active- tıklandığı anda bir bağlantı*/
+
+/* ziyaret edilmemiş  link */
+a:link {
+	color: red;
+  }
+  
+  /* ziyaret edilmiş link */
+  a:visited {
+	color: green;
+  }
+  
+  /* fare ile üzerine gelinmiş link */
+  a:hover {
+	color: hotpink;
+  }
+  
+  /* seçilen link */
+  a:active {
+	color: blue;
+
+
+Birkaç bağlantı durumu için stili ayarlarken bazı sıralama kuralları vardır:
+
+	a:hover a:link ve a:visited'den sonra gelmelidir
+	a:aktif a:hover'dan sonra gelmelidir ZORUNLU
+
+Özellik text-decoration çoğunlukla bağlantılardan alt çizgileri kaldırmak için kullanılır,sadece üzerine gelindiğinde altı çizili olsun isteyebiliriz.
+
+a:link {
+	text-decoration: none;
+  }
+  
+  a:visited {
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  a:active {
+	text-decoration: underline;
+  }
+
+
+Özellik background-color, bağlantılar için bir arka plan rengi belirtmek için kullanılabilir
+
+
+

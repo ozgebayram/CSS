@@ -1,0 +1,80 @@
+HTML'de iki ana liste türü vardır:
+
+--sırasız listeler (<ul>) - liste öğeleri madde işaretleri ile işaretlenmiştir
+--sıralı listeler (<ol>) - liste öğeleri sayılar veya harflerle işaretlenmiştir
+
+CSS listesi özellikleri şunları yapmanızı sağlar:
+
+--Sıralı listeler için farklı liste öğesi işaretçileri ayarlayın
+--Sırasız listeler için farklı liste öğesi işaretçileri ayarlayın
+--Liste öğesi işaretçisi olarak bir resim ayarlayın
+--Listelere ve liste öğelerine arka plan renkleri ekleyin
+
+
+--LİSTE ÖĞESİ İŞARETÇİLERİ--
+
+list-style-type, liste öğesi işaretçisinin türünü belirtir.
+ul.a {
+	list-style-type: circle;
+  }
+  
+  ul.b {
+	list-style-type: square;
+  }
+
+
+--list-style-image, bir resmi liste öğesi işaretçisi olarak belirtir:
+
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+---Varsayılan Ayarları Kaldır---
+--list-style-type:none, işaretleri/madde işaretlerini kaldırmak için de kullanılabilir. Listenin ayrıca varsayılan kenar boşluğu ve dolgusu olduğunu unutmayın. Bunu kaldırmak için <ul> veya <ol>'a margin:0ve ekleyin:padding:0
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+-- list-style, kestirme bir özelliktir. Tüm liste özelliklerini tek bir bildirimde ayarlamak için kullanılır:
+
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+
+Steno özelliğini kullanırken, özellik değerlerinin sırası şöyledir:
+
+--list-style-type(bir liste stili resim belirtilmişse, resim herhangi bir nedenle görüntülenemiyorsa bu özelliğin değeri görüntülenecektir)
+--list-style-position(liste öğesi işaretçilerinin içerik akışının içinde mi yoksa dışında mı görüneceğini belirtir)
+--list-style-image(bir resmi liste öğesi işaretçisi olarak belirtir)
+Yukarıdaki özellik değerlerinden biri eksikse, varsa eksik özelliğin varsayılan değeri eklenecektir.
+
+---Renklerle Stil Listesi---
+Listeleri biraz daha ilginç hale getirmek için renklerle de biçimlendirebiliriz.
+
+<ol> veya <ul> etiketine eklenen her şey tüm listeyi etkilerken <li> etiketine eklenen özellikler tek tek liste öğelerini etkiler:
+
+Örnek
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+
+
+  list-style	Bir listenin tüm özelliklerini tek bir bildirimde ayarlar.
+  list-style-image	Liste öğesi işaretçisi olarak bir resmi belirtir
+  list-style-position	Liste öğesi işaretçilerinin konumunu belirtir (madde işaretleri)
+  list-style-type	Liste öğesi işaretçisinin türünü belirtir

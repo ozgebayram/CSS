@@ -1,0 +1,40 @@
+CSS'de tablo kenarlıkları belirtmek için borderözelliği kullanın.
+
+--Tüm ekrana (tam genişlikte) yayılması gereken bir tabloya ihtiyacınız varsa width: 100%, <table> öğesine ekleyin
+table {
+	width: 100%;
+  }
+
+--border-collapse, tablo kenarlıklarının tek bir kenarlığa daraltılıp daraltılmayacağını belirler
+table {
+	border-collapse: collapse;
+  }
+
+--Bir tablonun genişliği ve yüksekliği width ve height özellikleri ile tanımlanır.
+
+--text-align, <th> veya <td> içindeki içeriğin yatay hizalamasını (sol, sağ veya orta gibi) ayarlar.
+
+Varsayılan olarak, <th> öğelerinin içeriği ortaya hizalanır ve <td> öğelerinin içeriği sola hizalanır.
+
+<td> öğelerinin içeriğini de merkeze hizalamak için şunu kullanın text-align: center
+
+td {
+	text-align: center;
+  }
+
+--İçeriği sola hizalamak için, <th> öğelerinin hizalamasını şu özellik ile sola hizalanmaya zorlayın text-align: left
+
+--Bir tablodaki kenarlıkla içerik arasındaki boşluğu kontrol etmek için padding<td> ve <th> öğelerindeki özelliği kullanın
+th, td {
+	padding: 15px;
+	text-align: left;
+  }
+
+  --hoverFareyle üzerine gelindiğinde tablo satırlarını vurgulamak için <tr> üzerindeki seçiciyi kullanın :
+  tr:hover {background-color: coral;}
+
+  Zebra çizgili tablolar için nth-child()seçiciyi kullanın ve background-colortüm even (veya odd) tablo satırlarına  ekleyin:
+<style>
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+

@@ -1,0 +1,19 @@
+.p1{
+	/* border: 3px solid red; */
+	border-width: 10px 5px 10px 5px;
+	border-style: dashed;
+	border-color: blueviolet green yellowgreen purple;
+}
+.p2{
+	border: 5px double brown;
+}
+.p3{
+	border: 10px dotted khaki;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: olive;
+}
+.p5{
+	border: 15px groove orange;
+}

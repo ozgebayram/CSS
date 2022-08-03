@@ -25,3 +25,21 @@ p[title="baslık1"]{
 p[title="baslık2"]{
 	background-color: chartreuse;
 }
+
+h1[title="baslık3"]{
+	background-color: yellow;
+}
+p::first-letter{
+	font-size: 2rem;
+}
+p::first-line{
+	font-style: italic;
+}
+
+#id{
+
+}
+
+.class{
+	
+}

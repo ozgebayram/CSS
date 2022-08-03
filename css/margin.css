@@ -1,0 +1,27 @@
+*{
+	/* margin:0; */
+}
+.container{
+	background-color: lightcoral;
+}
+.box1{
+	background-color: darkred;
+
+}
+
+
+.box2{
+	background-color: olive;
+	border: 3px solid red;
+	margin: 25px 52px 12px 40px;
+
+}
+
+.box3{
+	background-color: mediumseagreen;
+
+}
+.box4{
+	background-color: mediumslateblue;
+
+}

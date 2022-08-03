@@ -1,0 +1,25 @@
+.box1{
+	/* background-color: tomato; */
+	background-color: #ff0000;
+}
+.box2{
+	/* background-color: palegreen; */
+	background-color: #A2C455;
+}
+.box3{
+	/* background-color: lightcoral; */
+	background-color: #A2b400;
+}
+.box4{
+	/* background-color: yellow; */
+	background-color: #B200A4;
+}
+.box5{
+	/* background-color: darkblue; */
+	background-color: rgb(255,0,0,0.5);
+}
+.box6{
+	/* background-color: cornflowerblue; */
+	background-color: #C42500;
+}
+
